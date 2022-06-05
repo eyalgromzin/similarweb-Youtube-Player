@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import styles from './App.module.css';
 import {getPlaylist, removeItemFromList, swapItems as swapItemsInServer} from './api'
 import AddBar from "./components/addBar/addBar";
@@ -33,11 +33,11 @@ function App() {
     })
   }
 
-  const onPlayFinish = () => {
+  const onPlayFinish = useCallback(() => {
     if(playlist && playlist[0]){
       removeItemFromListCall(playlist[0].itemId)
     }
-  } 
+  } , [playlist])
   
   const onSwapItems = (sourceIndex, destinationIndex) => {
     let swappedPlaylist = swapArrayItems(destinationIndex, sourceIndex);
