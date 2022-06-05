@@ -7,7 +7,6 @@ export const getPlaylist = async (searchText) => {
 }
 
 export const addLinkToList = async (link, name) => {
-  let s = 4
   let res = await axios.post('/api/addLinkToList', {
     params: {
       link,
@@ -16,21 +15,6 @@ export const addLinkToList = async (link, name) => {
   })
 
   return res.data
-}
-
-
-async function fetchData(url){
-  console.log("FETCHING WEBSITE HTML...")
-  // make http call to url
-  let response = await axios(url).catch((err) => {
-    console.log(err)
-  });
-
-  if(response && response.status && response.status !== 200){
-      console.log("Error occurred while fetching data");
-      return;
-  }
-  return response;
 }
 
 export const getName = async (url) => {

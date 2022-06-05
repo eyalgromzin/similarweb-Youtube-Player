@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from './addBar.module.css';
 import {addLinkToList, getName} from '../../api'
-import axios from 'axios'
 
 function AddBar({onLinkAdded}) {
   const [linkText, setLinkText] = useState('https://www.youtube.com/watch?v=P0qQGvJoK68&ab_channel=JamesScholz') 

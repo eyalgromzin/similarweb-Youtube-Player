@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from './playlist.module.css';
-import {addLinkToList} from '../../api'
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
 

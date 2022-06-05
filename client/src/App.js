@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from './App.module.css';
-import {getPlaylist, addLinkToList, removeItemFromList, swapItems as swapItemsInServer} from './api'
+import {getPlaylist, removeItemFromList, swapItems as swapItemsInServer} from './api'
 import AddBar from "./components/addBar/addBar";
 import YouTubePlayer from './components/player/player';
 import Playlislt from './components/playlist/playlist';
