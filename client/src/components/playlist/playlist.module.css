@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+.mainPage{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.deleteButton{
+  margin-right: 10px;
+  /* padding: 4px; */
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+
+.dragButton{
+  margin-right: 10px;
+  /* padding: 4px; */
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.itemsContainer{
+  max-height: 400px;
+  overflow: auto;
+}
+.row{
+  margin-top: 20px;
+  position: relative;
+}
+
+.draggableRow{
+  position: absolute;
+}
+
+.sideBar{
+  height: 100%;
+  width: 200px;
+}
+
+.mainContent{
+  flex: 1;
+  padding-top: 20px;
+  text-align: center;
+}
+.playlist{
+  margin-top: 20px;
+}
