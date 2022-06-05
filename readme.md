@@ -14,8 +14,6 @@ npm run dev
 
 - the load of the playlist from file is done once when the server is loading - not effecting concurrency 
 
-- i didnt use usecallback / usememo / React.memo because the assignment with the extra subTasks wasnt small as it is.
-
 - on client actions such as remove / swap / add the server only returns a success/fail status for enabling each client individual control of 
   the playlist . and only on load it loads everybodys playlist 
 
